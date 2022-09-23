@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for a single list item -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <RelativeLayout
+        android:id="@+id/main_elements_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/click_to_play"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/GermanText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="@string/miwok_number_one"
+            android:padding="8dp"/>
+        <TextView
+            android:id="@+id/EnglishText"
+            android:layout_width="match_parent"
+            android:layout_below="@id/GermanText"
+            android:layout_height="wrap_content"
+            tools:text="@string/english_number_one"
+            android:padding="8dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/NumbersLabel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/category_name_numbers"
+        android:layout_weight="1"
+        android:textColor="@android:color/white"
+        android:contentDescription="@string/category_name_numbers"
+        android:background="@android:color/holo_orange_dark"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/category_family_members"
+        android:contentDescription="@string/category_family_members"
+        android:layout_weight="1"
+        android:textColor="@android:color/white"
+        android:onClick="openFamily"
+        android:background="@android:color/black"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/category_colors"
+        android:contentDescription="@string/category_colors"
+        android:layout_weight="1"
+        android:textColor="@android:color/white"
+        android:onClick="openColors"
+        android:background="@android:color/darker_gray"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/phrases_category"
+        android:contentDescription="@string/phrases_category"
+        android:textColor="@android:color/white"
+        android:layout_weight="1"
+        android:onClick="openPhrases"
+        android:background="@android:color/holo_green_dark"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/translateToGermanLabel"
+        android:contentDescription="@string/translateToGermanLabel"
+        android:layout_weight="1"
+        android:textColor="@android:color/white"
+        android:onClick="openTranslation"
+        android:background="@android:color/holo_orange_dark"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/downloadImageLabel"
+        android:contentDescription="@string/downloadImageLabel"
+        android:layout_weight="1"
+        android:textColor="@android:color/white"
+        android:onClick="clickimage"
+        android:background="@android:color/black"/>
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:text="@string/savedTranslates"-->
+<!--        android:contentDescription="@string/savedTranslates"-->
+<!--        android:layout_weight="1"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        android:onClick="openSaved"-->
+<!--        android:background="@android:color/darker_gray"/>-->
+
+
+    <Button
+        android:id="@+id/sign_out_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:background="@color/colorPrimary"
+        android:text="@string/sign_out"
+        android:contentDescription="@string/sign_out"
+        android:textColor="@android:color/white" />
+
+
+</LinearLayout>
